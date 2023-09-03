@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.fondo{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background:url(https://i.pinimg.com/564x/ff/2a/ed/ff2aed5fffbc9dbf518edd9a872b1cb4.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    flex-direction: column;
+}
+.bar-menu{
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    position: absolute;
+    visibility: hidden;
+    top: 15px;
+    left: 30px;
+    cursor: pointer;
+}
+.bar-mene{
+    font-size: 2.2em;
+    position: absolute;
+    visibility: hidden;
+    top: 15px;
+    left: 65px;
+    height: 68px;
+
+    color: white;
+    
+}
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(199, 137, 3, 0.788);
+    height: 80px;
+    -moz-box-shadow: 0 4px 4px rgb(255, 0, 0);
+    -webkit-box-shadow: 0 4px 4px rgb(255, 0, 0);
+    box-shadow: 0 4px 4px rgba(235, 200, 45, 0.664);
+}
+.main-menu{
+    list-style: none;
+    text-align: right;
+}
+a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.menu-1{
+    height: 81px;
+    display: inline-block;
+    padding: 27px 40px;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgba(231, 215, 191, 0.76);;
+}
+p{
+    margin: 120px 60px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+.imagen{
+margin-left: 50px;
+height: 79px;
+z-index: 5;
+}
+.main-menu-visible1{
+    display: block;
+    background-color: rgba(199, 137, 3, 0.644);
+    /* margin-top: 81px; */
+    padding: 0;
+    z-index: 3;
+}
+@media only screen and (max-width:868px) {
+    .main-nav{
+        height: 80px;
+        background-color: rgb(199, 137, 3);
+    }
+    .imagen{
+        display: none;
+    }
+    .main-menu{
+        display: none; 
+    }
+    
+    .main-menu-visible{
+        display: block;
+        background-color: rgba(199, 137, 3, 0.644);
+        /* margin-top: 81px; */
+        padding: 0;
+        z-index: 3;
+
+    }
+    .imagen-visible{
+        display: block;
+    }
+    .menu-1{
+        width: 100%;
+        display: block;
+        text-align: center;
+        visibility: visible;
+        border-bottom: 1px solid white;
+        line-height: 80px;
+        padding: 0;
+    }
+    a:hover{
+        background-color: rgba(253, 218, 142, 0.527);
+    }
+    .bar-menu{
+        visibility: visible;
+    }
+    .bar-mene{
+        visibility: visible;
+    }
+}
